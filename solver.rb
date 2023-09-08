@@ -13,6 +13,10 @@ class Solver
 
   def factorial(number)
     return 1 if number.zero?
+    # raise an error if input is a float number
+    return 'Input must be an integer, greater than or equal to 0' if number.is_a?(Float)
+    # raise an error if input is negative
+    return 'Expected an integer greater than or equal to 0' if number.negative?
 
     number * factorial(number - 1)
   end
