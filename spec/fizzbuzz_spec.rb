@@ -29,6 +29,14 @@ describe Solver do
         # Assert
         expect(solver.fizzbuzz(divisible3_and5)).to eq('fizzbuzz')
       end
+
+      it 'Any other case, return N as a string ' do
+        # Act
+        no_divisible = 2
+
+        # Assert
+        expect(solver.fizzbuzz(no_divisible)).to eq('2')
+      end
     end
   end
 end
