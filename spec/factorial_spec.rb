@@ -38,5 +38,17 @@ describe Solver do
       let(:number) { 5 }
       it { is_expected.to eq(120) }
     end
+
+    #Create a new context for negative numbers
+    context 'returns an error when given a negative number' do
+      let(:number) { -1 }
+      it { is_expected.to eq('Expected an integer greater than or equal to 0') }
+    end
+
+    #Create a new context for float numbers
+    context 'returns an error when given a float number' do
+      let(:number) { 1.5 }
+      it { is_expected.to eq('Input must be an integer, greater than or equal to 0') }
+    end
   end
 end
