@@ -7,7 +7,15 @@ class Solver
 
     n.to_s
   end
+
   def reverse(word)
     word.reverse
   end
+
+  def factorial(n)
+    return 1 if n.zero?
+  end
 end
+
+solver = Solver.new
+puts solver.factorial(0)
