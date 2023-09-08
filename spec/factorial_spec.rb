@@ -19,5 +19,24 @@ describe Solver do
       it { is_expected.to eq(1) }
     end
 
+    context 'returns 2 when given 2' do
+      let(:number) { 2 }
+      it { is_expected.to eq(2) }
+    end
+
+    context 'returns 6 when given 3' do
+      let(:number) { 3 }
+      it { is_expected.to eq(6) }
+    end
+
+    context 'returns 24 when given 4' do
+      let(:number) { 4 }
+      it { is_expected.to eq(24) }
+    end
+
+    context 'returns 120 when given 5' do
+      let(:number) { 5 }
+      it { is_expected.to eq(120) }
+    end
   end
 end
