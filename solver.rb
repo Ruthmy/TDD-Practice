@@ -14,8 +14,14 @@ class Solver
 
   def factorial(n)
     return 1 if n.zero?
+
+    n * factorial(n - 1)
   end
 end
 
 solver = Solver.new
-puts solver.factorial(0)
+puts solver.factorial(5)
+puts solver.factorial(4)
+puts solver.factorial(3)
+puts solver.factorial(2)
+puts solver.factorial(1)
