@@ -7,4 +7,7 @@ class Solver
 
     n.to_s
   end
+  def reverse(word)
+    word.reverse
+  end
 end
